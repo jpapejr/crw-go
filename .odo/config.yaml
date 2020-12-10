@@ -1,0 +1,14 @@
+kind: LocalConfig
+apiversion: odo.dev/v1alpha1
+ComponentSettings:
+  Type: golang
+  SourceLocation: ./
+  SourceType: local
+  Ports:
+  - "8080"
+  Application: go-healthcheck
+  Project: crw-go
+  Name: web
+  Url:
+  - Name: go-health
+    Port: 8080
